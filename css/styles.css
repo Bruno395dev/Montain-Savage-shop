@@ -1,0 +1,99 @@
+/*RESET
+padding-margin
+font-size
+font-family*/
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    font-size: xx-large;
+    text-align: center;
+    background-image: url(../assets/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header nav a {
+    color: grey;
+
+    font-size: medium;
+    font-weight: 700;
+}
+
+main {
+    background-color: #f5f5dc;
+}
+
+/*Aqui enpieza index*/
+.populares {
+
+    font-size: medium;
+    color: #000000;
+
+}
+
+.populares h3 {
+    font-weight: 600;
+}
+
+.historia img {
+    height: auto;
+    width: 200px;
+
+}
+
+.historia h2 {
+
+    font-size: x-large;
+    font-weight: 700;
+}
+
+
+
+
+.populares img {
+    height: auto;
+    width: 300px;
+}
+
+/*Aqui enpieza sobre nosotros*/
+
+
+
+.nosotros h2 {
+
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/*aqui esta la seccion de productos*/
+
+.listado article img {
+    width: auto;
+    height: 300px;
+}
+
+.arrow img {
+    width: auto;
+    height: 50px;
+}
+
+/*aqui esta el apartado de contactos */
+
+
+
+.contacto h3 {
+    font-weight: 600;
+    font-size: x-large
+}
+
+.contacto h2 {
+    font-size: xx-large;
+    font-weight: bold;
+
+}
