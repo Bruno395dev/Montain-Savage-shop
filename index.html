@@ -9,85 +9,141 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!--Estilos-->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Montain Savage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1>MONTAIN SAVAGE</h1>
-        <nav>
-            <!-- Barra de Navegacion alineados horizontalmente en destockp y en mobile hamburguesa-->
-            <ul>
-                <li><a href="./pages/sobre_nosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="./pages/productos.html">PRODUCTOS</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black" href="#">MONTAIN SAVAGE</a>
+                <img src="./assets/montañaicon.png" width="30" height="30" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page"
+                                href="./pages/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="populares">
-            <h2>PRODUCTOS POPULARES</h2>
-            <!--Las Siguientes imagenes funcionaran como link al tocarlas seran redireccionadas al catalogo de productos-->
-            <article>
-                <img src="./assets/snowboard.jpg" alt="snowboard">
-                <h3>SNOWBOARD</h3>
-            </article>
-            <article>
-                <img src="./assets/camperas.jpg" alt="camperas">
-                <h3>CAMPERAS</h3>
-
-                <article>
-                    <img src="./assets/alpinismo.jpg" alt="alpinismo">
-                    <h3>ALPINISMO</h3>
-                </article>
+        <section class="product ">
+            <div class="text-center">
+                <h2 class="mb-4 fw-bolder text-white">PRODUCTOS POPULARES</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark">
+                        <img src="./assets/alpinismo.jpg" class="card-img-top product-img" alt="alpinismo">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">ALPINISMO</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark">
+                        <img src="./assets/camperas.jpg" class="card-img-top product-img" alt="camperas">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">CAMPERAS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark">
+                        <img src="./assets/snowboard.jpg" class="card-img-top product-img" alt="snowboard">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-white">SNOWBOARD</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="historia">
-            <article>
-                <h2>HISTORIAS DE MONTAÑAS</h2>
-                <p>Si ergo illa tantum fastidium compesce contra naturalem usum habili, quem habetis vestra
-                    potestate, non aliud quam aversantur incurrere. Sed si ipse aversaris,
-                    ad languorem: et mors, paupertas et tu miseros fore. <br>
-                    Tollere odium autem in nostra potestate sint, ab omnibus et contra naturam transferre in
-                    nobis. Sed interim toto desiderio supprimunt: si vis aliqua quae in manu tua tibi necesse
-                    confundentur et quae, quod laudabile esset, nihil tamen possides. <br>
-                    Oportet uti solum de actibus prosequtionem et fugam, haec leniter et blandus et reservato. <br>
-                    Quae tibi placent quicunq prosunt aut diligebat multum, quod memor sis ad communia
-                    sunt ab initio minima. Quod si, exempli gratia, cupidum rerum in propria
-                    sunt ceramic calicem, admonere te solum Ceramic, quod
-                    sit generalis poculis, in cuius es tu cupidum. Deinde, si erumpit, non turbarentur. <br>
-                    Si osculantur puer tuus aut uxorem tuam, osculum, non dico quod omnia quae
-                    sunt hominis, et sic non tangetur, si aut ex eis moriatur.
-                </p>
-                <img src="./assets/cumbre.jpg" alt="esquiador">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/98hyl3N_1iI?si=ke3p7dyqshN6bdiu"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </article>
+        <section>
+            <div class="container bg-dark">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Cumbre de los Dioses</h2>
+                        <p>
+                            "Cumbre de los Dioses" es una película dirigida por el renombrado cineasta japonés Hideyuki
+                            Hirayama, basada en la novela homónima de Baku Yumemakura. La trama sigue a un fotógrafo de
+                            montaña, Makoto Fukamachi, quien se embarca en una búsqueda personal para descubrir la
+                            verdad detrás de una cámara encontrada en el Everest, la cual podría contener pruebas de la
+                            legendaria expedición de George Mallory en 1924. Esta expedición, que tuvo como objetivo ser
+                            la primera en alcanzar la cumbre del Everest, terminó en tragedia con la desaparición de
+                            Mallory y Andrew Irvine. <br>
+
+                            La película no solo captura la majestuosidad y los desafíos del alpinismo en las inhóspitas
+                            montañas del Himalaya, sino que también explora temas profundos como la obsesión, el
+                            sacrificio y la conexión entre pasado y presente. A través de impresionantes escenarios y
+                            una narrativa cautivadora, "Cumbre de los Dioses" te sumerge en el mundo peligroso y
+                            fascinante de aquellos que desafían los límites de la naturaleza y de sí mismos. <br>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/AwDVv6pDBx8?si=qazo3QdO-9Rgw3Ej"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <section>
-            <article>
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="./assets/facebookicon.png" alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="./assets/igicon.png" alt="Instagram"></a>
-                    </li>
+        <div class="row text-center">
+            <div class="col text-start">
+                <ul class="ulfooter">
+                    <img src="./assets/igicon.png" width="30" height="30" alt="logoig">
+                    <a href="https://www.instagram.com">INSTAGRAM</a>
                 </ul>
-                <h3>FRASE DE LA SEMANA</h3>
-                <p>potestate, non aliud quam aversantur incurrere. Sed si ipse aversaris,
-                    ad languorem: et mors, paupertas et tu miseros fore.</p>
-            </article>
-        </section>
+            </div>
+            <div class="col text-start">
+                <ul class="ulfooter">
+                    <img src="./assets/facebookicon.png" width="30" height="30" alt="logofacebook">
+                    <a href="https://www.facebook.com/profile.php?id=61558974071213">FACEBOOK</a>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="card quote">
+                    <div class="card-header">
+                        <h4>Frase de la Semana</h4>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>Persigo la felicidad. Y la montaña responde a mi búsqueda.</p>
+                            <footer class="blockquote-footer"> Chantal Maudit <cite title="Source Title">Fitz
+                                    Roy</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

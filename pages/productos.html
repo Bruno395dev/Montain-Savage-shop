@@ -12,156 +12,218 @@
     <!--Estilos-->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <header>
-            <h1>PRODUCTOS</h1>
-            <nav>
-                <!-- Barra de Navegacion alineados horizontalmente en destockp y en mobile hamburguesa-->
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="./sobre_nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                    <li>
-                        <a href="../index.html">
-                            <img src="../assets/carritoicono.png" alt=""> CARRITO</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <!--filtros de productos-->
-            <h4>Filtros</h4>
-            <section class="actividad">
-                <article>
-                    <ul>
-                        <li>
-                            <label for="alpinismo">ALPINISMO</label>
-                            <input type="checkbox" name="actividad" id="alpinismo"><br>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-black" href="#">MONTAIN SAVAGE</a>
+                <img src="../assets/montañaicon.png" width="30" height="30" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="../index.html">INICIO</a>
                         </li>
-                        <label for="camping">CAMPING</label>
-                        <input type="checkbox" name="actividad" id="camping"><br>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="sobre_nosotros.html">SOBRE NOSOTROS</a>
                         </li>
-                        <li>
-                            <label for="camperas">CAMPERAS</label>
-                            <input type="checkbox" name="actividad" id="camperas"><br>
-                        </li>
-                        <li>
-                            <label for="snowboard">SNOWBOARD</label>
-                            <input type="checkbox" name="actividad" id="snowboard"><br>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="contacto.html">CONTACTO</a>
                         </li>
                     </ul>
-                </article>
-            </section>
-
-            <section class="talles">
-                <article>
-                    <ul>
-                        <li>
-                            <label for="talle-s">S</label>
-                            <input type="checkbox" name="talle" id="talle-s">
-                        </li>
-                        <li>
-                            <label for="talle-m">M</label>
-                            <input type="checkbox" name="talle" id="talle-m">
-                        </li>
-                        <li>
-                            <label for="talle-l">L</label>
-                            <input type="checkbox" name="talle" id="talle-l">
-                        </li>
-                        <li>
-                            <label for="talle-xl">XL</label>
-                            <input type="checkbox" name="talle" id="talle-xl">
-                        </li>
-                        <li>
-                            <label for="talle-xxl">XXL</label>
-                            <input type="checkbox" name="talle" id="talle-xxl">
-                        </li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="genero">
-                <article>
-                    <ul>
-                        <li>
-                            <label for="hombre">HOMBRE</label>
-                            <input type="checkbox" name="genero" id="hombre">
-                        </li>
-                        <li>
-                            <label for="mujer">MUJER</label>
-                            <input type="checkbox" name="genero" id="mujer">
-                        </li>
-                        <li>
-                            <label for="niño">NIÑO</label>
-                            <input type="checkbox" name="genero" id="niño">
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <!--Aqui comienza el listado de productos-->
-            <section class="listado">
-                <article>
-                    <img src="../assets/carpa.jpg" alt="carpacamping">
-                    <p>Carpa Invernal</p>
-                    <p>Precio</p>
-                </article>
-                <article>
-                    <img src="../assets/camperas.jpg" alt="camperapluma">
-                    <p>Campera de Pluma</p>
-                    <p>Precio</p>
-                </article>
-                <article>
-                    <img src="../assets/granpones.jpg" alt="granpon">
-                    <p>Granpon</p>
-                    <p>Precio</p>
-                </article>
-                <article>
-                    <img src="../assets/alpin-tour-plus.png" alt="piolet">
-                    <p>Piolet</p>
-                    <p>Precio</p>
-                </article>
-                <article>
-                    <img src="../assets/tablas-1.jpg" alt="tablasnowboard">
-                    <p>Tablas Negras</p>
-                    <p>Precio</p>
-                </article>
-                <article>
-                    <img src="../assets/pantalongoretex.jpg" alt="pantalon-goretex">
-                    <p>Pantalon GORETEX</p>
-                    <p>Precio</p>
-                </article>
-            </section>
-            <!--Arrow-->
-            <section>
-                <article class="arrow">
-                    <img src="../assets/arrow.png" alt="flecha">
-                </article>
-            </section>
-
-        </main>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--filtros de productos-->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Filtros -->
+                <div class="col-md-3">
+                    <div class="filter-section">
+                        <h4>Filtros</h4>
+                        <form>
+                            <!-- Filtro por Talles -->
+                            <div class="form-group">
+                                <label for="talle">Talle</label>
+                                <select class="form-control" id="talle">
+                                    <option>Todos</option>
+                                    <option>XS</option>
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                            </div>
+                            <!-- Filtro por Género -->
+                            <div class="form-group">
+                                <label for="genero">Género</label>
+                                <select class="form-control" id="genero">
+                                    <option>Todos</option>
+                                    <option>Hombre</option>
+                                    <option>Mujer</option>
+                                    <option>Niños</option>
+                                </select>
+                            </div>
+                            <!-- Filtro por Actividad -->
+                            <div class="form-group">
+                                <label for="actividad">Actividad</label>
+                                <select class="form-control" id="actividad">
+                                    <option>Todos</option>
+                                    <option>alpinismo</option>
+                                    <option>Camping</option>
+                                    <option>Escalada</option>
+                                    <option>SNOWBOARD</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Productos -->
+                <div class="col-md-9">
+                    <div class="row">
+                        <!-- Primera Columna de Productos -->
+                        <div class="col-md-4">
+                            <div class="product-card card">
+                                <img src="../assets/anorakburton.jpg" class="card-img-top" alt="Producto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anorak Burton</h5>
+                                    <p class="card-text">El anorak Burton es una prenda de abrigo de alta calidad
+                                        diseñada para soportar las condiciones más extremas en la montaña. Fabricado con
+                                        materiales impermeables y resistentes al viento, ofrece una excelente protección
+                                        térmica sin comprometer la movilidad. Ideal para snowboarders y esquiadores,
+                                        este anorak combina estilo y funcionalidad para mantenerte cálido y seco en todo
+                                        momento.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                            <div class="product-card card">
+                                <img src="../assets/carpa.jpg" class="card-img-top" alt="Producto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carpa para 2 personas</h5>
+                                    <p class="card-text">Esta carpa para 2 personas está diseñada específicamente para
+                                        enfrentar climas extremos. Construida con materiales ultrarresistentes y un
+                                        diseño aerodinámico, proporciona una excelente protección contra fuertes
+                                        vientos, nieve y lluvia intensa. Su sistema de montaje rápido y su espacio
+                                        interior optimizado aseguran comodidad y seguridad en las condiciones más
+                                        adversas.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segunda Columna de Productos -->
+                        <div class="col-md-4">
+                            <div class="product-card card">
+                                <img src="../assets/granpones.jpg" class="card-img-top" alt="Producto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Granpones</h5>
+                                    <p class="card-text">Los crampones son esenciales para la escalada en hielo y
+                                        travesías glaciales, proporcionando tracción superior en superficies heladas.
+                                        Fabricados con acero de alta resistencia y un sistema de fijación seguro, estos
+                                        crampones aseguran un agarre firme y confiable en cualquier condición,
+                                        permitiendo a los alpinistas moverse con confianza y seguridad en terrenos
+                                        peligrosos.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                            <div class="product-card card">
+                                <img src="../assets/tablas-1.jpg" class="card-img-top" alt="Producto 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tablas de Snowboard</h5>
+                                    <p class="card-text">Nuestras tablas de snowboard están diseñadas para ofrecer un
+                                        rendimiento superior en cualquier tipo de terreno. Con una construcción robusta
+                                        y ligera, combinan flexibilidad y rigidez en las áreas adecuadas para
+                                        proporcionar un control preciso y una experiencia de deslizamiento suave.
+                                        Disponibles en varios estilos y tamaños, son perfectas tanto para principiantes
+                                        como para riders avanzados.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tercera Columna de Productos -->
+                        <div class="col-md-4">
+                            <div class="product-card card">
+                                <img src="../assets/alpin-tour-plus.png" class="card-img-top" alt="Producto 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Piolets</h5>
+                                    <p class="card-text">Los piolets de escalada en hielo son herramientas fundamentales
+                                        para la seguridad y el progreso en rutas heladas. Diseñados con cabezas de acero
+                                        endurecido y mangos ergonómicos, ofrecen una penetración precisa en el hielo y
+                                        una excelente capacidad de anclaje. Ligero y resistente, cada piolet está
+                                        optimizado para un equilibrio perfecto entre durabilidad y rendimiento técnico
+                                        en las condiciones más desafiantes.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                            <div class="product-card card">
+                                <img src="../assets/pantalongoretex.jpg" class="card-img-top" alt="Producto 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pantalon goretex</h5>
+                                    <p class="card-text">El pantalón Gore-Tex es una prenda técnica de alta gama que
+                                        ofrece máxima protección contra el agua y el viento, manteniendo una excelente
+                                        transpirabilidad. Ideal para actividades al aire libre en condiciones adversas,
+                                        este pantalón es duradero y cómodo, con refuerzos en las áreas de mayor desgaste
+                                        y un ajuste ergonómico que permite una total libertad de movimiento.</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
         <footer>
-            <section>
-                <article>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="../assets/facebookicon.png" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="../assets/igicon.png" alt="Instagram"></a>
-                        </li>
+            <div class="row text-center">
+                <div class="col text-start">
+                    <ul class="ulfooter">
+                        <img src="../assets/igicon.png" width="30" height="30" alt="logoig">
+                        <a href="https://www.instagram.com">INSTAGRAM</a>
                     </ul>
-                    <h3>FRASE DE LA SEMANA</h3>
-                    <p>potestate, non aliud quam aversantur incurrere. Sed si ipse aversaris,
-                        ad languorem: et mors, paupertas et tu miseros fore.</p>
-                </article>
-            </section>
+                </div>
+                <div class="col text-start">
+                    <ul class="ulfooter">
+                        <img src="../assets/facebookicon.png" width="30" height="30" alt="logofacebook">
+                        <a href="https://www.facebook.com/profile.php?id=61558974071213">FACEBOOK</a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="card quote">
+                        <div class="card-header">
+                            <h4>Frase de la Semana</h4>
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>Persigo la felicidad. Y la montaña responde a mi búsqueda.</p>
+                                <footer class="blockquote-footer"> Chantal Maudit <cite title="Source Title">Fitz
+                                        Roy</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </footer>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>
