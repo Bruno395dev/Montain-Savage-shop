@@ -34,11 +34,12 @@ $animation-name: pulse;
         &:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-            
+
         }
     }
 }
-//loader
+
+/*loader (Funcionalidad Futura)
 
 
 .loader-wrapper {
@@ -64,8 +65,9 @@ $animation-name: pulse;
     animation: spin 1s linear infinite;
 }
 
-/* Animación del spinner */
+Animación del spinner 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+    */

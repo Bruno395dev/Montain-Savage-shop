@@ -46,37 +46,38 @@ body {
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
 
+/*loader (Funcionalidad Futura)
+
+
 .loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(141, 6, 6, 0.8823529412);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8d0606e1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
 }
+
 
 .loader {
-  border: 8px solid #b9ef06;
-  border-radius: 50%;
-  border-top: 8px solid #f3f3f3;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
+    border: 8px solid #b9ef06; 
+    border-radius: 50%;
+    border-top: 8px solid #f3f3f3; 
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
 }
 
-/* Animación del spinner */
+Animación del spinner 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
+    */
 .product-img {
   width: 100%;
   height: auto;
