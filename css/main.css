@@ -1,0 +1,146 @@
+@charset "UTF-8";
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: url(../assets/fondo1.png) no-repeat center center fixed;
+  background-size: cover;
+  padding: 50px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  padding: 50px;
+  border-radius: 10px;
+  color: #fff;
+}
+.container img {
+  width: 250px;
+  height: auto;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.container-fluid img {
+  width: 30px;
+  height: 30px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.product img {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.product img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(141, 6, 6, 0.8823529412);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #b9ef06;
+  border-radius: 50%;
+  border-top: 8px solid #f3f3f3;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Animación del spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px #ebebeb;
+}
+
+.card-columns {
+  column-count: 2;
+  /* Número de columnas para las tarjetas */
+}
+
+.filter-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.product-card {
+  margin-bottom: 20px;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.contact-section {
+  padding: 40px 0;
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.ulfooter {
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  padding: 50px;
+  margin-top: 25px;
+  row-gap: 25px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.quote {
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=main.css.map */
