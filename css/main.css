@@ -16,8 +16,8 @@ body {
   color: #fff;
 }
 .container img {
-  width: 250px;
-  height: auto;
+  width: 75%;
+  height: 50%;
 }
 
 @keyframes pulse {
@@ -46,41 +46,27 @@ body {
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
 
-/*loader (Funcionalidad Futura)
-
-
-.loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #8d0606e1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; 
+.contacttitle {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
 }
 
-
-.loader {
-    border: 8px solid #b9ef06; 
-    border-radius: 50%;
-    border-top: 8px solid #f3f3f3; 
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+.nh {
+  font-weight: bolder;
+  color: #680000;
+  text-align: center;
 }
 
-Animación del spinner 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.producttitle {
+  font-weight: bolder;
+  color: white;
+  text-align: center;
 }
-    */
+
 .product-img {
-  width: 100%;
-  height: auto;
+  width: 279.93px;
+  height: 168.93px;
   border-radius: 8px;
   box-shadow: 0px 0px 30px #ebebeb;
 }

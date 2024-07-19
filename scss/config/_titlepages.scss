@@ -1,0 +1,19 @@
+@mixin tt ($color, $align){
+    font-weight: bolder;
+    color:  $color;
+    text-align: $align;
+
+}
+.contacttitle {
+        @include tt (white, center);
+
+}
+
+.nh {
+    @include tt (#680000, center);
+
+}
+
+.producttitle {
+    @include tt (white, center);
+}
