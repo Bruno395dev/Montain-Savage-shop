@@ -1,11 +1,12 @@
-@mixin tt ($color, $align){
+@mixin tt ($color, $align) {
     font-weight: bolder;
-    color:  $color;
+    color: $color;
     text-align: $align;
 
 }
+
 .contacttitle {
-        @include tt (white, center);
+    @include tt (white, center);
 
 }
 
@@ -15,5 +16,9 @@
 }
 
 .producttitle {
+    @include tt (white, center);
+}
+
+.gallery {
     @include tt (white, center);
 }
