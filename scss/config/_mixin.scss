@@ -1,8 +1,9 @@
-@mixin contacttitle-tt ($color, $align){
-    color:  $color;
+@mixin contacttitle-tt ($color, $align) {
+    color: $color;
     text-align: $align;
 
 }
+
 @mixin h1-styles {
     color: white;
     text-align: center;

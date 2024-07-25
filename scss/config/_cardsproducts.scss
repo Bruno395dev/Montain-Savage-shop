@@ -11,11 +11,10 @@
 
 .product-card {
     margin-bottom: 20px;
-     
+
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 
     }
 }
-
